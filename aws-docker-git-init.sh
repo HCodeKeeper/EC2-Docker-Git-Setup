@@ -27,6 +27,12 @@ export PATH=$PATH:/usr/local/bin
 docker version
 docker-compose version
 
+# Git
+echo "Installing Git."
+sudo yum install git -y
+echo "Git installed!"
+git version
+
 # Git ssh keypair setup!
 read -p "Do you want to set up git with present ssh keypair? [y/n]: " answer
 
