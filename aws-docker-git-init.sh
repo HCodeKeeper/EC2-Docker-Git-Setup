@@ -36,6 +36,7 @@ then
     mv ./id_rsa.pub ~/.ssh/
     echo "Keypair is now in ~/.ssh/"
     chmod 600 ~/.ssh/id_rsa
+    # eval $(ssh-agent) might be needed if it wasn't started before
     ssh-add -k ~/.ssh/id_rsa
     echo "SSH private key added to the agent"
 else
